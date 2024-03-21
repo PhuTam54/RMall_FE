@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import DefaultLayout from '~/layouts';
+// import './assets/modules/jquery.min.js';
 
 function App() {
     return (
