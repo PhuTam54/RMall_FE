@@ -37,6 +37,8 @@
         <link href="templates/theme3597/css/template.css" rel="stylesheet" type="text/css" />
         <link href="templates/system/css/system.css" rel="stylesheet" type="text/css" />
         <link href="templates/theme3597/css/megamenu.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="path/to/linearicons.css">
+
         <link
             href="plugins/system/t3/base-bs3/fonts/font-awesome/css/font-awesome.min.css"
             rel="stylesheet"
@@ -172,125 +174,7 @@
                 });
             })(jQuery);
 
-            (function ($, undefined) {
-                $(document).ready(function () {
-                    /**
-                     * isScrolledIntoView
-                     * @description  check the element whas been scrolled into the view
-                     */
-                    function isScrolledIntoView(elem) {
-                        return (
-                            elem.offset().top + elem.outerHeight() >= $(window).scrollTop() &&
-                            elem.offset().top <= $(window).scrollTop() + $(window).height()
-                        );
-                    }
-
-                    /**
-                     * initOnView
-                     * @description  calls a function when element has been scrolled into the view
-                     */
-                    function lazyInit(element, func) {
-                        var $win = jQuery(window);
-                        $win.on('load scroll', function () {
-                            if (!element.hasClass('lazy-loaded') && isScrolledIntoView(element)) {
-                                func.call();
-                                element.addClass('lazy-loaded');
-                            }
-                        });
-                    }
-
-                    var head = document.getElementsByTagName('head')[0],
-                        insertBefore = head.insertBefore;
-
-                    head.insertBefore = function (newElement, referenceElement) {
-                        if (
-                            (newElement.href &&
-                                newElement.href.indexOf('//fonts.googleapis.com/css?family=Roboto') != -1) ||
-                            newElement.innerHTML.indexOf('gm-style') != -1
-                        ) {
-                            return;
-                        }
-                        insertBefore.call(head, newElement, referenceElement);
-                    };
-
-                    var $googleMapItem = $('#mod_tm_google_map_269 .rd-google-map');
-
-                    lazyInit(
-                        $googleMapItem,
-                        $.proxy(function () {
-                            var $this = $(this),
-                                styles = $this.attr('data-styles');
-
-                            $this.googleMap({
-                                marker: {
-                                    basic: $this.data('marker'),
-                                    active: $this.data('marker-active'),
-                                },
-                                styles: [
-                                    {
-                                        featureType: 'landscape.man_made',
-                                        elementType: 'geometry.fill',
-                                        stylers: [{ color: '#e9e5dc' }],
-                                    },
-                                    {
-                                        featureType: 'landscape.natural',
-                                        elementType: 'geometry.fill',
-                                        stylers: [{ visibility: 'on' }, { color: '#b8cb93' }],
-                                    },
-                                    { featureType: 'poi', elementType: 'all', stylers: [{ visibility: 'off' }] },
-                                    {
-                                        featureType: 'poi.business',
-                                        elementType: 'all',
-                                        stylers: [{ visibility: 'simplified' }],
-                                    },
-                                    { featureType: 'poi.medical', elementType: 'all', stylers: [{ visibility: 'on' }] },
-                                    { featureType: 'poi.park', elementType: 'all', stylers: [{ visibility: 'on' }] },
-                                    {
-                                        featureType: 'poi.park',
-                                        elementType: 'geometry.fill',
-                                        stylers: [{ color: '#ccdca1' }],
-                                    },
-                                    {
-                                        featureType: 'poi.sports_complex',
-                                        elementType: 'all',
-                                        stylers: [{ visibility: 'on' }],
-                                    },
-                                    {
-                                        featureType: 'road',
-                                        elementType: 'geometry.fill',
-                                        stylers: [{ hue: '#ff0000' }, { saturation: -100 }, { lightness: 99 }],
-                                    },
-                                    {
-                                        featureType: 'road',
-                                        elementType: 'geometry.stroke',
-                                        stylers: [{ color: '#808080' }, { lightness: 54 }, { visibility: 'off' }],
-                                    },
-                                    {
-                                        featureType: 'road',
-                                        elementType: 'labels.text.fill',
-                                        stylers: [{ color: '#767676' }],
-                                    },
-                                    {
-                                        featureType: 'road',
-                                        elementType: 'labels.text.stroke',
-                                        stylers: [{ color: '#ffffff' }],
-                                    },
-                                    {
-                                        featureType: 'water',
-                                        elementType: 'all',
-                                        stylers: [{ saturation: 43 }, { lightness: -11 }, { color: '#89cada' }],
-                                    },
-                                ],
-                                onInit: function (map) {
-                                    google.maps.event.addListener(map, 'tilesloaded', function (evt) {
-                                        $('#mod_tm_google_map_269').addClass('map-loaded');
-                                    });
-                                },
-                            });
-                        }, $googleMapItem),
-                    );
-                });
-            })(jQuery);
+            
             (function ($) {
                 $(window).load(function () {
                     userAgent = navigator.userAgent.toLowerCase();

@@ -62,7 +62,8 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 			$(container).find("select").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"Select an option","no_results_text":"No results match"});
 		}
 	});
-	var path = "templates/theme3597/js/index.html";
+	
+var path = "templates/theme3597/js/index.html";
 
     ;(function($){
         $(window).load(function() {
@@ -140,84 +141,9 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
                 
             }
         });
-    })(jQuery);
+    })(jQuery)
 
-		;(function ($, undefined){
-
-      $document = $(document),
-      $window = $(window),
-      $html = $("html"),
-      plugins = {
-        progressBar: $("#mod_tm_progress_bars_308 .progress-linear"),
-        circleProgress: $("#mod_tm_progress_bars_308 .progress-bar-circle")
-      };
-     
-      function isScrolledIntoView(elem) {
-        var $window = $(window);
-        elem.attr("val", elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height());
-        return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
-      }
-
-      $(window).load(function(){
-        $("#mod_tm_progress_bars_308 .progress-linear").each(function(){
-          $window.on("scroll load", $.proxy(function () {
-
-            var bar = $(this);
-            if (!bar.hasClass('animated-first') && isScrolledIntoView(bar)) {
-              var end = bar.attr("data-to");
-              bar.find('.progress-bar-linear').css({width: end + '%'});
-              bar.find('.progress-value').countTo({
-                refreshInterval: 40,
-                from: 0,
-                to: end,
-                speed: 500
-              });
-              bar.addClass('animated-first');
-            }
-          }, $(this)));
-        });
-  
-        $("#mod_tm_progress_bars_308 .progress-bar-circle").each(function(){
-          if (!$(this).hasClass('animated')) {
-
-              var arrayGradients = $(this).attr('data-gradient').split(",");
-
-              $(this).circleProgress({
-                value: $(this).attr('data-value'),
-                size: $(this).attr('data-size') ? $(this).attr('data-size') : 175,
-                fill: {gradient: arrayGradients, gradientAngle: Math.PI / 4},
-                startAngle: -Math.PI / 4 * 2,
-                thickness: $(this).attr('data-thickness') ? $(this).attr('data-thickness') : auto,
-                emptyFill: $(this).attr('data-empty-fill') ? $(this).attr('data-empty-fill') : "rgb(245,245,245)"
-
-              }).on('circle-animation-progress', function (event, progress, stepValue) {
-                $(this).find('span').text(String(stepValue.toFixed(2)).replace('0.', '').replace('1.', '1'));
-              });
-              $(this).addClass('animated');
-
-            }
-        });
-
-      });
-
-      fixItemID = "#mod_tm_progress_bars_308";
-
-      function ie10HeightFix(id){
-        $("body").find(id).find(".progress-bar-circle canvas").each(function(){
-          width = $(this).width();
-          $(this).height(width);
-        });
-      }
-
-      $(window).on("load scroll", function(){
-        if($(".mod_tm_progress_bars").length > 0){
-          ie10HeightFix(fixItemID);
-        }
-      });
-          
-		})(jQuery);
-	
-    ;(function($){
+		(function($){
         $(window).load(function(){
             userAgent = navigator.userAgent.toLowerCase();
             isIE = userAgent.indexOf("msie") != -1 ? parseInt(userAgent.split("msie")[1], 10) : userAgent.indexOf("trident") != -1 ? 11 : userAgent.indexOf("edge") != -1 ? 12 : false;
@@ -249,7 +175,8 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
             }
         });
     })(jQuery);
-(function($){
+
+(function($){
   var click = true;
   $('a[data-fancybox="fancybox"]').fancybox({padding:0,margin:0,loop:true,openSpeed:500,closeSpeed:500,nextSpeed:500,prevSpeed:500,afterLoad:function(){$('.fancybox-inner').click(function(){if(click==true){$('body').toggleClass('fancybox-full')}})},beforeShow:function(){$('body').addClass('fancybox-lock')},afterClose:function(){$('body').removeClass('fancybox-lock')},tpl:{image:'<div class="fancybox-image" style="background-image: url(\'{href}\')"></div>',iframe:'<span class="iframe-before"/><iframe id="fancybox-frame{rnd}" width="60%" height="60%" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0"'+($.browser.msie?' allowtransparency="true"':'')+'/>'},helpers:{title:null,thumbs:{height:50,width:80},overlay:{css:{'background':'#191919'}}}})})(jQuery);
 
@@ -310,7 +237,8 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
             }
         });
     })(jQuery);
-;(function($){$().ready(function(){
+
+;(function($){$().ready(function(){
 	$("#module_252>i.fa-user").click(function(){$("#module_252").toggleClass("shown")})})})(jQuery);
 	</script>
 
