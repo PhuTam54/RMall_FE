@@ -1,8 +1,8 @@
 import parallax from "~/assets/images copy/parallax/parallax.jpg";
 import parallax1 from "~/assets/images copy/parallax/parallax1.jpg";
 import parallax2 from "~/assets/images copy/parallax/parallax2.jpg";
-import parallax3 from "~/assets/images copy/parallax/parallax3.jpg"
-;import partner1 from "~/assets/images copy/partners/partner1.jpg";
+import parallax3 from "~/assets/images copy/parallax/parallax3.jpg";
+import partner1 from "~/assets/images copy/partners/partner1.jpg";
 import partner2 from "~/assets/images copy/partners/partner2.jpg";
 import partner3 from "~/assets/images copy/partners/partner3.jpg";
 import partner4 from "~/assets/images copy/partners/partner4.jpg";
@@ -76,7 +76,7 @@ function Home() {
                             id="item_204"
                           >
                             <div className="item_content">
-                              <i className="linearicons-bag2" />
+                            <i class="fa-solid fa-shop"></i>
                               {/* Item title */}
                               <h3 className="item_title item_title__">
                                 <span className="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">
@@ -94,8 +94,8 @@ function Home() {
                             id="item_205"
                           >
                             <div className="item_content">
-                              <i className="linearicons-pizza" />
-                              {/* Item title */}
+                            <i class="fa-solid fa-bowl-food"></i>
+                                                          {/* Item title */}
                               <h3 className="item_title item_title__">
                                 <span className="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">
                                   Food
@@ -114,7 +114,7 @@ function Home() {
                             id="item_206"
                           >
                             <div className="item_content">
-                              <i className="linearicons-bowling-pins" />
+                            <i class="fa-solid fa-gamepad"></i>
                               {/* Item title */}
                               <h3 className="item_title item_title__">
                                 <span className="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">
@@ -134,7 +134,7 @@ function Home() {
                             id="item_207"
                           >
                             <div className="item_content">
-                              <i className="linearicons-bag2" />
+                            <i class="fa-solid fa-spa"></i>
                               {/* Item title */}
                               <h3 className="item_title item_title__">
                                 <span className="item_title_part_0 item_title_part_odd item_title_part_first_half item_title_part_first item_title_part_last">
