@@ -10,6 +10,10 @@ const routes = {
     ourteam: '/ourteam',
     shopping: '/shopping',
     singleteam: '/singleteam',
+    login: '/login',
+    signup: '/signup',
+    resetpass: '/resetpass',
+    
 };
 
 export default routes;
