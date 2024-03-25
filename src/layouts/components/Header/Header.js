@@ -12,7 +12,7 @@ function Header() {
             <div className="col-sm-4">
               <div className="logo">
                 <div className="logo-text">
-                  <a href="index.html" title="cube">
+                  <a href="/" title="cube">
                     <span>cube</span>
                   </a>
                   <small className="site-slogan">shopping &amp; entertainmet</small>
@@ -66,7 +66,7 @@ function Header() {
                           <a
                             itemProp="url"
                             className=""
-                            href="index.php/about-us.html"
+                            href="/aboutus"
                             data-target="#"
                           >
                             About Us
@@ -107,7 +107,7 @@ function Header() {
                                         <a
                                           itemProp="url"
                                           className=""
-                                          href="index.php/departments/cinema.html"
+                                          href="/cinema"
                                           data-target="#"
                                         >
                                           Cinema
@@ -121,7 +121,7 @@ function Header() {
                                         <a
                                           itemProp="url"
                                           className=""
-                                          href="index.php/departments/entertainment.html"
+                                          href="/entertainment"
                                           data-target="#"
                                         >
                                           Entertainment
@@ -135,7 +135,7 @@ function Header() {
                                         <a
                                           itemProp="url"
                                           className=""
-                                          href="index.php/departments/shopping.html"
+                                          href="/shopping"
                                           data-target="#"
                                         >
                                           Shopping
@@ -149,7 +149,7 @@ function Header() {
                                         <a
                                           itemProp="url"
                                           className=""
-                                          href="index.php/departments/dinning.html"
+                                          href="/dinning"
                                           data-target="#"
                                         >
                                           Dinning
@@ -189,20 +189,7 @@ function Header() {
                                       itemType="http://www.schema.org/SiteNavigationElement"
                                       className="mega-nav level1"
                                     >
-                                      <li
-                                        itemProp="name"
-                                        data-id={138}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/faqs.html"
-                                          data-target="#"
-                                        >
-                                          FAQs
-                                        </a>
-                                      </li>
+                                      
                                       <li
                                         itemProp="name"
                                         data-id={136}
@@ -245,194 +232,16 @@ function Header() {
                                           History
                                         </a>
                                       </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={137}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/testimonials.html"
-                                          data-target="#"
-                                        >
-                                          Testimonials
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={749}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/services.html"
-                                          data-target="#"
-                                        >
-                                          Services
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={750}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/single-service.html"
-                                          data-target="#"
-                                        >
-                                          Single service
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={305}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/site-map.html"
-                                          data-target="#"
-                                        >
-                                          Site map
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={342}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/forum.html"
-                                          data-target="#"
-                                        >
-                                          Forum
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={746}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/partners.html"
-                                          data-target="#"
-                                        >
-                                          Partners
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={343}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/careers.html"
-                                          data-target="#"
-                                        >
-                                          Careers
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={283}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/portfolio.html"
-                                          data-target="#"
-                                        >
-                                          Portfolio
-                                        </a>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        className="dropdown-submenu mega"
-                                        data-id={426}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/elements.html"
-                                          data-target="#"
-                                        >
-                                          Elements
-                                        </a>
-                                        <div className="nav-child dropdown-menu mega-dropdown-menu">
-                                          <div className="mega-dropdown-inner">
-                                            <div className="row">
-                                              <div
-                                                className="col-xs-12 mega-col-nav"
-                                                data-width={12}
-                                              >
-                                                <div className="mega-inner">
-                                                  <ul
-                                                    itemScope=""
-                                                    itemType="http://www.schema.org/SiteNavigationElement"
-                                                    className="mega-nav level2"
-                                                  >
-                                                    <li
-                                                      itemProp="name"
-                                                      data-id={336}
-                                                      data-level={3}
-                                                    >
-                                                      <a
-                                                        itemProp="url"
-                                                        className=""
-                                                        href="index.php/pages/elements/pricing.html"
-                                                        data-target="#"
-                                                      >
-                                                        Pricing
-                                                      </a>
-                                                    </li>
-                                                    <li
-                                                      itemProp="name"
-                                                      data-id={171}
-                                                      data-level={3}
-                                                    >
-                                                      <a
-                                                        itemProp="url"
-                                                        className=""
-                                                        href="index.php/template-settings.html"
-                                                        data-target="#"
-                                                      >
-                                                        Template settings
-                                                      </a>
-                                                    </li>
-                                                  </ul>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li
-                                        itemProp="name"
-                                        data-id={748}
-                                        data-level={2}
-                                      >
-                                        <a
-                                          itemProp="url"
-                                          className=""
-                                          href="index.php/pages/404-page.html"
-                                          data-target="#"
-                                        >
-                                          404 page
-                                        </a>
-                                      </li>
+                                      
+                                      
+                                      
+                                      
+                                     
+                                      
+                                      
+                                     
+                                      
+                                  
                                     </ul>
                                   </div>
                                 </div>
@@ -444,7 +253,7 @@ function Header() {
                           <a
                             itemProp="url"
                             className="gallery"
-                            href="index.php/gallery.html"
+                            href="/gallery"
                             data-target="#"
                           >
                             Gallery
@@ -454,7 +263,7 @@ function Header() {
                           <a
                             itemProp="url"
                             className=""
-                            href="index.php/contact-us.html"
+                            href="/contactus"
                             data-target="#"
                           >
                             Contact Us
@@ -601,7 +410,7 @@ function Header() {
                                                                 <li>
                                                                   <a
                                                                     rel="nofollow"
-                                                                    href="index.php/password-reset.html"
+                                                                    href="/resetpass"
                                                                   >
                                                                     Forgot your
                                                                     password?
@@ -619,7 +428,7 @@ function Header() {
                                                                 <li>
                                                                   <a
                                                                     rel="nofollow"
-                                                                    href="index.php/user-registration.html"
+                                                                    href="/signup"
                                                                   >
                                                                     Create an account
                                                                   </a>

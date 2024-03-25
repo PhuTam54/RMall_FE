@@ -1,74 +1,67 @@
 <!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 400 (Bad Request)!!1</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error 400 (Bad Request)</title>
   <style>
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, code {
-    font: 15px/22px Arial, sans-serif;
-}
-
-html {
-    background: #fff;
-    color: #222;
-    padding: 15px;
-}
-
-body {
-    margin: 7% auto 0;
-    max-width: 390px;
-    min-height: 180px;
-    padding: 30px 0 15px;
-}
-
-/* Tùy chỉnh nội dung trang lỗi */
-body > * {
-    background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
-    padding-right: 205px;
-}
-
-p {
-    margin: 11px 0 22px;
-    overflow: hidden;
-}
-
-ins {
-    color: #777;
-    text-decoration: none;
-}
-
-a img {
-    border: 0;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 772px) {
-    body {
-        background: none;
-        margin-top: 0;
-        max-width: none;
-        padding-right: 0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-}
 
-/* Logo của Google */
-#logo {
-    display: inline-block;
-    height: 54px;
-    width: 150px;
-    background: url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;
-    margin-left: -5px;
-}
+    html, body {
+        font: 15px/22px Arial, sans-serif;
+        background: #fff;
+        color: #222;
+        padding: 15px;
+        margin: 0;
+    }
 
+    body {
+        margin: 7% auto 0;
+        max-width: 390px;
+        min-height: 180px;
+        padding: 30px 0 15px;
+        background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
+        padding-right: 205px;
+    }
 
+    p {
+        margin: 11px 0 22px;
+        overflow: hidden;
+    }
 
-</style>
-  <a href=//www.google.com><span id=logo aria-label=Google></span></a>
-  <p><b>400.</b> <ins>That’s an error.</ins>
-  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+    ins {
+        color: #777;
+        text-decoration: none;
+    }
 
+    a img {
+        border: 0;
+    }
+
+    #logo {
+        display: inline-block;
+        height: 54px;
+        width: 150px;
+        background: url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;
+        margin-left: -5px;
+    }
+
+    @media screen and (max-width: 772px) {
+        body {
+            background: none;
+            margin-top: 0;
+            max-width: none;
+            padding-right: 0;
+        }
+    }
+  </style>
+</head>
+<body>
+  <a href="//www.google.com"><span id="logo" aria-label="Google"></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins></p>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins></p>
+</body>
+</html>

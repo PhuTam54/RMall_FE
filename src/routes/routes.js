@@ -14,6 +14,12 @@ import History from '~/pages/History';
 import Ourteam from '~/pages/Ourteam';
 import Shopping from '~/pages/Shopping';
 import Singleteam from '~/pages/Singleteam';
+import Login from '~/pages/Login';
+import Signup from '~/pages/Signup';
+import ResetPass from '~/pages/ResetPass';
+
+
+
 
 
 // Public routes
@@ -29,6 +35,10 @@ export const publicRoutes = [
     { path: config.routes.ourteam, component: Ourteam},
     { path: config.routes.shopping, component: Shopping},
     { path: config.routes.singleteam, component: Singleteam},
+    { path: config.routes.login, component: Login},
+    { path: config.routes.signup, component: Signup},
+    { path: config.routes.resetpass, component: ResetPass},
+
 ];
 
 // Private routes
